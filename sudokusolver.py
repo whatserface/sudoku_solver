@@ -31,8 +31,7 @@ def solve(sudoku):
             return solve(sudoku)
         else:
             return sudoku, True
-    print('Хуйня произошла')
     return sudoku, False
 
 print(solve(input))
-print(time() - a)
+print(f'Done in {time() - a}')
